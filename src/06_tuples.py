@@ -40,7 +40,7 @@ t = (1, 2, 5, 7, 99)
 def print_tuple(t): # Prints 1 2 5 7 99, one per line
     for el in t:
       print(el)
+      
 # Declare a tuple of 1 element then print it
 u = (1)  # What needs to be added to make this work?
-def print_tuple(u):
-      print(u)
+print_tuple(u)
