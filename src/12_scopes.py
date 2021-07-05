@@ -12,6 +12,10 @@ change_x()
 # This prints 12. What do we have to modify in change_x() to get it to print 99?
 print(x)
 
+def change_x2():
+  global x 
+  x = 99
+
 
 # This nested function has a similar problem.
 
@@ -30,3 +34,18 @@ def outer():
 
 
 outer()
+
+
+def outer2 ():
+    y = 120
+
+    def inner():
+      nonlocal y
+      y = 999
+
+    inner()
+    print(y)
+
+
+outer2()
+

@@ -30,3 +30,14 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+args = sys.argv
+
+def timeless(month, year):
+  print(calendar.TextCalendar(firstweekday=0).formatyear(month, year))
+  if len(args) == 1:
+    timeless(datetime.today().month, datetime.today().year)
+  elif len(args) == 2: 
+    timeless(datetime.today().year, int(args[0]))
+  else:
+    print("PROGRAM EXPECTS ARGUMENTS [month] and [year] ")

@@ -1,0 +1,3 @@
+python is clean
+ python is fast
+ python is nice
